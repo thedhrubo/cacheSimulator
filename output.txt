@@ -1,0 +1,5 @@
+Total Hit Rate : 98.036140%
+Load Hit Rate : 98.750153%
+Store Hit Rate : 96.126953%
+Total Run Time : 1925127.000000
+Average Memory Access Latency : 1.000002

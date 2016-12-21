@@ -1,0 +1,48 @@
+To install, do the following 
+
+1. 'cd' to the directory containing the files and folders. 
+2. Run 'make' in the terminal.
+3. This creates the executable file in the bin/ folder
+
+
+To run the program, 
+	
+	$ ./bin/cache_simulator <configuration_file> <trace_file> 
+	
+Configuration files are kept in conf folder
+trace files are kept in trace folder
+
+example command to run the program :
+
+$bin/cache_simulator conf/small-dm.conf trace/twolf.trace
+
+after executing this command an output file will generate with twolf.trace.out . To check the output we can execute :
+
+vim trace/twolf.trace.out
+
+A barchart naming barchart.xlsx is also included with the project with providing the all test results.
+
+**********************************************************************
+CONFIGURATION FILE DETAILS 
+**********************************************************************
+
+In the configuration file, the necessary parameters need to be defined. 
+	Line size : Any positive integer
+        Associativity : Any positive integer
+        Data Size : Specifies the total size of the data in the cache. This does not include the size
+                    of any overhead (such as tag size). It should be specified in KB and be a non-negative
+                    power of 2. For example, a value of "64" means a 64KB cache.
+        Replacement Policy
+		0 (for random replacement)
+		1 (for FIFO)
+        Cache miss penalty
+        WritePolicy 
+		0 (for no-write-allocate)
+		1 (for write-allocate)	
+	
+	
+	Cache hit time is treated default 1.
+	
+IF you face any confusion to build this project then feel free to contact with me : dhrubo.saha@student.nmt.edu
+
+There needs some updates like dirty bit is not implemented. I didn't get that much time for that. 
